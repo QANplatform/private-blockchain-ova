@@ -1,0 +1,36 @@
+OVF version:   1.0
+VirtualApp:    false
+Name:          qan-privnet
+
+Download Size:  Unknown
+
+Deployment Sizes:
+  Flat disks:   805.00 MB
+  Sparse disks: Unknown
+
+Networks:
+  Name:        nat
+  Description: The nat network
+
+Virtual Machines:
+  Name:               qan-privnet
+  Operating System:   other5xlinux64guest
+  Virtual Hardware:
+    Families:         vmx-19 
+    Number of CPUs:   6
+    Cores per socket: 3
+    Memory:           12.00 GB
+
+    Disks:
+      Index:          0
+      Instance ID:    5
+      Capacity:       805.00 MB
+      Disk Types:     SCSI-lsilogic 
+
+    NICs:
+      Adapter Type:   E1000
+      Connection:     nat
+
+References:
+  File:  /in/disk-cl1.vmdk
+
